@@ -53,11 +53,8 @@ int sorted(int *items, int length) {
 	return 1;
 }
 
-int *bogosort(int *items, int *result, int length) {
-	int *temp, index, i;
-	
-	if(!(temp = (int *) malloc(sizeof(int) * length)))
-		diep("malloc");
+int *bogosort(int *items, int *result, int *temp, int length) {
+	int index, i;
 	
 	memcpy(temp, items, sizeof(int) * length);
 	
@@ -68,16 +65,13 @@ int *bogosort(int *items, int *result, int length) {
 		*(temp + index) = *(temp + length - 1);
 	}
 	
-	free(temp);
-	
 	return result;
 }
 
 int main(int argc, char *argv[]) {
 	int length = 4;
-	int *items = NULL;
-	int *result = NULL;
-	int iterations = 0;
+	int *items, *result, *temp;
+	long long iterations = 0;
 	struct timeval begin, end, diff;
 	float elapsed = 0;
 	
@@ -93,6 +87,9 @@ int main(int argc, char *argv[]) {
 		diep("malloc");
 	
 	if(!(result = (int *) malloc(sizeof(int) * length)))
+		diep("malloc");
+	
+	if(!(temp = (int *) malloc(sizeof(int) * length)))
 		diep("malloc");
 	
 	//
@@ -112,7 +109,7 @@ int main(int argc, char *argv[]) {
 	gettimeofday(&begin, NULL);
 	
 	while(!sorted(result, length)) {
-		bogosort(items, result, length);
+		bogosort(items, result, temp, length);
 		iterations++;
 	}
 	
@@ -124,8 +121,8 @@ int main(int argc, char *argv[]) {
 	//
 	timersub(&end, &begin, &diff);
 	elapsed = (float) diff.tv_sec + (((float) diff.tv_usec) / 1000000);
-	
-	printf("[+] sort count: %d\n", iterations);
+
+	printf("[+] sort count: %lld\n", iterations);
 	printf("[+] sort time: %02.2f seconds, %.0f sort/seconds\n", elapsed, iterations / elapsed);
 	
 	return 0;
