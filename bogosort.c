@@ -5,18 +5,24 @@
 #include <errno.h>
 #include <sys/time.h>
 
+//
+// die with error
+//
 void diep(char *str) {
 	fprintf(stderr, "[-] %s: %s\n", str, strerror(errno));
 	exit(EXIT_FAILURE);
 }
 
 //
-// randomization
+// return a random integer within a range
 //
 int rnd(int low, int high) {
 	return rand() % (high - low + 1) + low;
 }
 
+//
+// fill an array with random numbers
+//
 int *randomize(int *items, int length) {
 	int i;
 	
@@ -41,7 +47,7 @@ void dump(int *items, int length) {
 }
 
 //
-// bogosort
+// check if the array is ordered (asc)
 //
 int sorted(int *items, int length) {
 	int i;
@@ -53,15 +59,25 @@ int sorted(int *items, int length) {
 	return 1;
 }
 
+//
+// the bogosort
+//
 int *bogosort(int *items, int *result, int *temp, int length) {
 	int index, i;
 	
 	memcpy(temp, items, sizeof(int) * length);
 	
+	// on each pass, we chose a random item on the
+	// array, the array is reduced after each iteration
 	for(i = 0; length; i++, length--) {
+		// choosing an available item
 		index = rnd(0, length);
 		
+		// push the item on the result array
 		*(result + i) = *(temp + index);
+		
+		// moving last item to the current position
+		// to resize the array
 		*(temp + index) = *(temp + length - 1);
 	}
 	
