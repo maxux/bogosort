@@ -71,7 +71,7 @@ int *bogosort(int *items, int *result, int *temp, int length) {
 	// array, the array is reduced after each iteration
 	for(i = 0; length; i++, length--) {
 		// choosing an available item
-		index = rnd(0, length);
+		index = rnd(0, length - 1);
 		
 		// push the item on the result array
 		*(result + i) = *(temp + index);
