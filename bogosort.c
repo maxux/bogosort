@@ -21,7 +21,7 @@ int *randomize(int *items, int length) {
 	int i;
 	
 	for(i = 0; i < length; i++)
-		*(items + i) = rnd(0, 128);
+		*(items + i) = rnd(0, 512);
 	
 	return items;
 }
