@@ -121,7 +121,14 @@ there is one chance in 1,307,674,368,000 to sort the array on each sort
 	[+] bogosort on 15 items
 	[+] items: 352, 102, 330, 143, 203, 306, 129, 36, 507, 97, 384, 23, 328, 503, 200
 	[+] sorting...
+	[+] items: 23, 36, 97, 102, 129, 203, 306, 328, 330, 352, 384, 503, 503, 503, 507
+	[+] sort count: 1028488912
+	[+] sort time: 232.44 seconds, 4424728 sort/seconds
 
 # runtime (16 items)
 
-there is one chance in 20,922,789,888,000 to sort the array on each sort, i'm not very confident about to sort it.
+there is one chance in 20,922,789,888,000 to sort the array on each sort, will i am lucky ?
+	
+	[+] bogosort on 16 items
+	[+] items: 193, 123, 388, 280, 256, 442, 467, 461, 278, 48, 11, 185, 56, 333, 43, 139
+	[+] sorting...
