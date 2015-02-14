@@ -4,13 +4,6 @@ a simple implementation of bogosort in C
 
 # runtime (small list)
 
-	[+] bogosort on 1 items
-	[+] items: 337
-	[+] sorting...
-	[+] items: 337
-	[+] sort count: 0
-	[+] sort time: 0.00 seconds, -nan sort/seconds
-
 	[+] bogosort on 2 items
 	[+] items: 337, 405
 	[+] sorting...
@@ -18,40 +11,7 @@ a simple implementation of bogosort in C
 	[+] sort count: 0
 	[+] sort time: 0.00 seconds, -nan sort/seconds
 
-	[+] bogosort on 3 items
-	[+] items: 337, 405, 90
-	[+] sorting...
-	[+] items: 0, 90, 405
-	[+] sort count: 2
-	[+] sort time: 0.00 seconds, 1000000 sort/seconds
-
-	[+] bogosort on 4 items
-	[+] items: 337, 405, 90, 210
-	[+] sorting...
-	[+] items: 210, 210, 337, 405
-	[+] sort count: 11
-	[+] sort time: 0.00 seconds, 2750000 sort/seconds
-
-	[+] bogosort on 5 items
-	[+] items: 337, 405, 90, 210, 347
-	[+] sorting...
-	[+] items: 90, 210, 337, 405, 405
-	[+] sort count: 36
-	[+] sort time: 0.00 seconds, 3272727 sort/seconds
-
-	[+] bogosort on 6 items
-	[+] items: 337, 405, 90, 210, 347, 356
-	[+] sorting...
-	[+] items: 90, 210, 347, 347, 356, 405
-	[+] sort count: 33
-	[+] sort time: 0.00 seconds, 3300000 sort/seconds
-
-	[+] bogosort on 7 items
-	[+] items: 337, 405, 90, 210, 347, 356, 223
-	[+] sorting...
-	[+] items: 90, 223, 337, 347, 356, 405, 405
-	[+] sort count: 62
-	[+] sort time: 0.00 seconds, 2066667 sort/seconds
+	[...]
 
 	[+] bogosort on 8 items
 	[+] items: 337, 405, 90, 210, 347, 356, 223, 83
@@ -106,6 +66,8 @@ a simple implementation of bogosort in C
 
 # runtime (13 items)
 
+there is one chance in 6,227,020,800 to sort the array on each sort
+
 	[+] bogosort on 13 items
 	[+] items: 160, 122, 32, 111, 291, 299, 304, 434, 434, 338, 315, 347, 69
 	[+] sorting...
@@ -128,6 +90,8 @@ a simple implementation of bogosort in C
 	[+] sort time: 1.62 seconds, 5043578 sort/seconds
 
 # runtime (14 items)
+
+there is one chance in 87,178,291,200 to sort the array on each sort
 	
 	[+] bogosort on 14 items
 	[+] items: 277, 414, 164, 458, 269, 77, 32, 195, 245, 435, 387, 215, 372, 32
@@ -145,6 +109,8 @@ a simple implementation of bogosort in C
 
 # runtime (15 items)
 
+there is one chance in 1,307,674,368,000 to sort the array on each sort
+
 	[+] bogosort on 15 items
 	[+] items: 479, 315, 286, 164, 160, 181, 193, 11, 271, 417, 111, 76, 18, 368, 209
 	[+] sorting...
@@ -156,8 +122,6 @@ a simple implementation of bogosort in C
 	[+] items: 352, 102, 330, 143, 203, 306, 129, 36, 507, 97, 384, 23, 328, 503, 200
 	[+] sorting...
 
-i'm still waiting the end...
-
 # runtime (16 items)
-	
-	planned, but...
+
+there is one chance in 20,922,789,888,000 to sort the array on each sort, i'm not very confident about to sort it.
