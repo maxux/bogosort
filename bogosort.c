@@ -139,7 +139,8 @@ int main(int argc, char *argv[]) {
 	elapsed = (float) diff.tv_sec + (((float) diff.tv_usec) / 1000000);
 
 	printf("[+] sort count: %lld\n", iterations);
-	printf("[+] sort time: %02.2f seconds, %.0f sort/seconds\n", elapsed, iterations / elapsed);
+	printf("[+] sort time : %02.2f seconds\n", elapsed);
+	printf("[+] sort speed: %.2fM sort/seconds\n", (iterations / elapsed) / 1000000);
 	
 	return 0;
 }
