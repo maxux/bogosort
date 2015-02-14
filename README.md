@@ -4,6 +4,8 @@ a simple implementation of bogosort in C
 
 # runtime (small list)
 
+Intel(R) Core(TM) i5-4210U CPU @ 2.4GHz
+
 	[+] bogosort on 2 items
 	[+] items: 337, 405
 	[+] sorting...
@@ -12,123 +14,80 @@ a simple implementation of bogosort in C
 	[+] sort time: 0.00 seconds, -nan sort/seconds
 
 	[...]
-
+	
 	[+] bogosort on 8 items
-	[+] items: 337, 405, 90, 210, 347, 356, 223, 83
+	[+] items: 154, 292, 240, 394, 500, 136, 312, 457
 	[+] sorting...
-	[+] items: 83, 83, 90, 337, 347, 356, 405, 405
-	[+] sort count: 632
-	[+] sort time: 0.00 seconds, 2759825 sort/seconds
-
+	[+] items: 136, 154, 240, 292, 312, 394, 457, 500
+	[+] sort count: 32915
+	[+] sort time: 0.01 seconds, 4328074 sort/seconds
+	
 	[+] bogosort on 9 items
-	[+] items: 337, 405, 90, 210, 347, 356, 223, 83, 336
+	[+] items: 154, 292, 240, 394, 500, 136, 312, 457, 254
 	[+] sorting...
-	[+] items: 83, 90, 223, 337, 347, 347, 356, 405, 405
-	[+] sort count: 31682
-	[+] sort time: 0.01 seconds, 2470331 sort/seconds
-
+	[+] items: 136, 154, 240, 254, 292, 312, 394, 457, 500
+	[+] sort count: 198246
+	[+] sort time: 0.03 seconds, 6491143 sort/seconds
+	
 	[+] bogosort on 10 items
-	[+] items: 337, 405, 90, 210, 347, 356, 223, 83, 336, 82
+	[+] items: 154, 292, 240, 394, 500, 136, 312, 457, 254, 198
 	[+] sorting...
-	[+] items: 82, 82, 83, 210, 223, 223, 347, 347, 405, 405
-	[+] sort count: 52710
-	[+] sort time: 0.02 seconds, 2976789 sort/seconds
-
+	[+] items: 136, 154, 198, 240, 254, 292, 312, 394, 457, 500
+	[+] sort count: 2923458
+	[+] sort time: 0.45 seconds, 6461894 sort/seconds
+	
 	[+] bogosort on 11 items
-	[+] items: 337, 405, 90, 210, 347, 356, 223, 83, 336, 82, 103
+	[+] items: 154, 292, 240, 394, 500, 136, 312, 457, 254, 198, 390
 	[+] sorting...
-	[+] items: 82, 90, 103, 210, 336, 337, 347, 347, 356, 405, 405
-	[+] sort count: 105046
-	[+] sort time: 0.02 seconds, 5282941 sort/seconds
+	[+] items: 136, 154, 198, 240, 254, 292, 312, 390, 394, 457, 500
+	[+] sort count: 28106593
+	[+] sort time: 4.69 seconds, 5997203 sort/seconds
 
 # runtime (12 items)
 
-	[+] bogosort on 12 items
-	[+] items: 337, 405, 90, 210, 347, 356, 223, 83, 336, 82, 103, 512
-	[+] sorting...
-	[+] items: 82, 83, 90, 103, 210, 223, 336, 356, 356, 405, 512, 512
-	[+] sort count: 7218840
-	[+] sort time: 1.27 seconds, 5669096 sort/seconds
+there is one chance in 479,001,600 to sort the array on each sort
 
 	[+] bogosort on 12 items
-	[+] items: 324, 232, 495, 88, 165, 33, 219, 468, 290, 269, 347, 356
+	[+] items: 253, 18, 211, 300, 448, 11, 395, 308, 293, 355, 488, 421
 	[+] sorting...
-	[+] items: 88, 165, 219, 269, 290, 290, 290, 324, 347, 347, 495, 495
-	[+] sort count: 2406471
-	[+] sort time: 0.46 seconds, 5287448 sort/seconds
+	[+] items: 11, 18, 211, 253, 293, 300, 308, 355, 395, 421, 448, 488
+	[+] sort count: 43322408
+	[+] sort time: 7.85 seconds, 5521094 sort/seconds
 
 	[+] bogosort on 12 items
-	[+] items: 317, 126, 340, 464, 222, 341, 41, 500, 17, 69, 121, 238
+	[+] items: 92, 378, 148, 252, 405, 413, 115, 509, 181, 436, 244, 432
 	[+] sorting...
-	[+] items: 41, 69, 121, 121, 126, 238, 238, 340, 464, 464, 500, 500
-	[+] sort count: 5014222
-	[+] sort time: 0.89 seconds, 5650828 sort/seconds
+	[+] items: 92, 115, 148, 181, 244, 252, 378, 405, 413, 432, 436, 509
+	[+] sort count: 459454680
+	[+] sort time: 83.87 seconds, 5478026 sort/seconds
+	
+	[+] bogosort on 12 items
+	[+] items: 54, 174, 181, 322, 220, 182, 15, 141, 331, 294, 392, 296
+	[+] sorting...
+	[+] items: 15, 54, 141, 174, 181, 182, 220, 294, 296, 322, 331, 392
+	[+] sort count: 684290083
+	[+] sort time: 124.30 seconds, 5505118 sort/seconds
 
 # runtime (13 items)
 
 there is one chance in 6,227,020,800 to sort the array on each sort
 
-	[+] bogosort on 13 items
-	[+] items: 160, 122, 32, 111, 291, 299, 304, 434, 434, 338, 315, 347, 69
-	[+] sorting...
-	[+] items: 32, 69, 69, 111, 122, 160, 299, 304, 304, 315, 338, 434, 434
-	[+] sort count: 114904401
-	[+] sort time: 23.60 seconds, 4869539 sort/seconds
-
-	[+] bogosort on 13 items
-	[+] items: 320, 254, 475, 164, 32, 353, 164, 187, 73, 413, 46, 390, 78
-	[+] sorting...
-	[+] items: 32, 46, 73, 78, 164, 164, 187, 187, 320, 413, 413, 475, 475
-	[+] sort count: 358728054
-	[+] sort time: 72.59 seconds, 4941677 sort/seconds
-
-	[+] bogosort on 13 items
-	[+] items: 349, 267, 249, 463, 346, 61, 101, 324, 292, 154, 65, 183, 488
-	[+] sorting...
-	[+] items: 61, 65, 101, 183, 183, 249, 267, 292, 324, 463, 463, 488, 488
-	[+] sort count: 8177043
-	[+] sort time: 1.62 seconds, 5043578 sort/seconds
+	[waiting new test with corrected algo]
 
 # runtime (14 items)
 
 there is one chance in 87,178,291,200 to sort the array on each sort
 	
-	[+] bogosort on 14 items
-	[+] items: 277, 414, 164, 458, 269, 77, 32, 195, 245, 435, 387, 215, 372, 32
-	[+] sorting...
-	[+] items: 32, 32, 164, 215, 215, 245, 269, 277, 372, 372, 414, 458, 458, 458
-	[+] sort count: 735670553
-	[+] sort time: 157.48 seconds, 4671460 sort/seconds
-
-	[+] bogosort on 14 items
-	[+] items: 207, 491, 76, 31, 21, 99, 298, 501, 281, 410, 37, 36, 236, 234
-	[+] sorting...
-	[+] items: 21, 31, 36, 37, 76, 234, 236, 281, 298, 298, 298, 410, 410, 491
-	[+] sort count: 567714452
-	[+] sort time: 119.97 seconds, 4732047 sort/seconds
+	[waiting new test with corrected algo]
 
 # runtime (15 items)
 
 there is one chance in 1,307,674,368,000 to sort the array on each sort
 
-	[+] bogosort on 15 items
-	[+] items: 479, 315, 286, 164, 160, 181, 193, 11, 271, 417, 111, 76, 18, 368, 209
-	[+] sorting...
-	[+] items: 11, 76, 111, 160, 164, 181, 193, 209, 209, 286, 315, 368, 368, 417, 417
-	[+] sort count: 52723619875
-	[+] sort time: 12034.58 seconds, 4381012 sort/seconds
-
-	[+] bogosort on 15 items
-	[+] items: 352, 102, 330, 143, 203, 306, 129, 36, 507, 97, 384, 23, 328, 503, 200
-	[+] sorting...
-	[+] items: 23, 36, 97, 102, 129, 203, 306, 328, 330, 352, 384, 503, 503, 503, 507
-	[+] sort count: 1028488912
-	[+] sort time: 232.44 seconds, 4424728 sort/seconds
+	[waiting new test with corrected algo]
 
 # runtime (16 items)
 
 there is one chance in 20,922,789,888,000 to sort the array on each sort, will i am lucky ?
 	
-	[+] bogosort on 16 items
-	[+] items: 193, 123, 388, 280, 256, 442, 467, 461, 278, 48, 11, 185, 56, 333, 43, 139
-	[+] sorting...
+	[waiting new test with corrected algo]
