@@ -27,7 +27,7 @@ int *randomize(int *items, int length) {
 	int i;
 	
 	for(i = 0; i < length; i++)
-		*(items + i) = rnd(0, 512);
+		items[i] = rnd(0, 512);
 	
 	return items;
 }
@@ -41,9 +41,9 @@ void dump(int *items, int length) {
 	printf("[+] items: ");
 	
 	for(i = 0; i < length - 1; i++)
-		printf("%d, ", *(items + i));
+		printf("%d, ", items[i]);
 	
-	printf("%d\n", *(items + i));
+	printf("%d\n", items[i]);
 }
 
 //
@@ -53,7 +53,7 @@ int sorted(int *items, int length) {
 	int i;
 	
 	for(i = 0; i < length - 1; i++)
-		if(*(items + i) > *(items + i + 1))
+		if(items[i] > items[i + 1])
 			return 0;
 	
 	return 1;
@@ -74,11 +74,11 @@ int *bogosort(int *items, int *result, int *temp, int length) {
 		index = rnd(0, length - 1);
 		
 		// push the item on the result array
-		*(result + i) = *(temp + index);
+		result[i] = temp[index];
 		
 		// moving last item to the current position
 		// to resize the array
-		*(temp + index) = *(temp + length - 1);
+		temp[index] = temp[length - 1];
 	}
 	
 	return result;
