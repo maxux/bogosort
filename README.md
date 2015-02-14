@@ -81,7 +81,7 @@ a simple implementation of bogosort in C
 	[+] sort count: 105046
 	[+] sort time: 0.02 seconds, 5282941 sort/seconds
 
-# runtime (longer list)
+# runtime (12 items)
 
 	[+] bogosort on 12 items
 	[+] items: 337, 405, 90, 210, 347, 356, 223, 83, 336, 82, 103, 512
@@ -104,7 +104,7 @@ a simple implementation of bogosort in C
 	[+] sort count: 5014222
 	[+] sort time: 0.89 seconds, 5650828 sort/seconds
 
-# runtime (longer list)
+# runtime (13 items)
 
 	[+] bogosort on 13 items
 	[+] items: 160, 122, 32, 111, 291, 299, 304, 434, 434, 338, 315, 347, 69
@@ -127,7 +127,7 @@ a simple implementation of bogosort in C
 	[+] sort count: 8177043
 	[+] sort time: 1.62 seconds, 5043578 sort/seconds
 
-# runtime (more longer list)
+# runtime (14 items)
 	
 	[+] bogosort on 14 items
 	[+] items: 277, 414, 164, 458, 269, 77, 32, 195, 245, 435, 387, 215, 372, 32
@@ -136,4 +136,13 @@ a simple implementation of bogosort in C
 	[+] sort count: 735670553
 	[+] sort time: 157.48 seconds, 4671460 sort/seconds
 
-	still waiting the next round...
+	[+] bogosort on 14 items
+	[+] items: 207, 491, 76, 31, 21, 99, 298, 501, 281, 410, 37, 36, 236, 234
+	[+] sorting...
+	[+] items: 21, 31, 36, 37, 76, 234, 236, 281, 298, 298, 298, 410, 410, 491
+	[+] sort count: 567714452
+	[+] sort time: 119.97 seconds, 4732047 sort/seconds
+
+# runtime (15 items)
+
+still waiting...
