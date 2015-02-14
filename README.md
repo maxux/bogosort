@@ -145,4 +145,19 @@ a simple implementation of bogosort in C
 
 # runtime (15 items)
 
-still waiting...
+	[+] bogosort on 15 items
+	[+] items: 479, 315, 286, 164, 160, 181, 193, 11, 271, 417, 111, 76, 18, 368, 209
+	[+] sorting...
+	[+] items: 11, 76, 111, 160, 164, 181, 193, 209, 209, 286, 315, 368, 368, 417, 417
+	[+] sort count: 52723619875
+	[+] sort time: 12034.58 seconds, 4381012 sort/seconds
+
+	[+] bogosort on 15 items
+	[+] items: 352, 102, 330, 143, 203, 306, 129, 36, 507, 97, 384, 23, 328, 503, 200
+	[+] sorting...
+
+i'm still waiting the end...
+
+# runtime (16 items)
+	
+	planned, but...
