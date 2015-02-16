@@ -142,5 +142,9 @@ int main(int argc, char *argv[]) {
 	printf("[+] sort time : %02.2f seconds\n", elapsed);
 	printf("[+] sort speed: %.2fM sort/seconds\n", (iterations / elapsed) / 1000000);
 	
+	free(items);
+	free(result);
+	free(temp);
+	
 	return 0;
 }

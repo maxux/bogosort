@@ -72,22 +72,75 @@ there is one chance in 479,001,600 to sort the array on each sort
 
 there is one chance in 6,227,020,800 to sort the array on each sort
 
-	[waiting new test with corrected algo]
+	[+] bogosort on 13 items
+	[+] items: 260, 451, 348, 431, 479, 87, 383, 369, 88, 195, 199, 83, 240
+	[+] sorting...
+	[+] items: 83, 87, 88, 195, 199, 240, 260, 348, 369, 383, 431, 451, 479
+	[+] sort count: 4101547985
+	[+] sort time : 812.36 seconds
+	[+] sort speed: 5.05M sort/seconds
+
+	[+] bogosort on 13 items
+	[+] items: 224, 495, 31, 248, 310, 320, 273, 328, 298, 272, 27, 246, 143
+	[+] sorting...
+	[+] items: 143, 224, 246, 246, 248, 272, 273, 298, 320, 320, 320, 495, 495
+	[+] sort count: 41139810
+	[+] sort time : 7.94 seconds
+	[+] sort speed: 5.18M sort/seconds
+	
+	[+] bogosort on 13 items
+	[+] items: 483, 343, 301, 390, 92, 260, 463, 319, 405, 81, 394, 225, 223
+	[+] sorting...
+	[+] items: 81, 92, 223, 225, 260, 319, 343, 390, 394, 405, 405, 463, 463
+	[+] sort count: 872236238
+	[+] sort time : 174.76 seconds
+	[+] sort speed: 4.99M sort/seconds
 
 # runtime (14 items)
 
 there is one chance in 87,178,291,200 to sort the array on each sort
 	
-	[waiting new test with corrected algo]
+	[+] bogosort on 14 items
+	[+] items: 321, 506, 328, 229, 159, 185, 101, 373, 422, 57, 450, 56, 264, 395
+	[+] sorting...
+	[+] items: 56, 101, 159, 185, 229, 321, 328, 373, 373, 395, 395, 422, 506, 506
+	[+] sort count: 1039035409
+	[+] sort time : 215.79 seconds
+	[+] sort speed: 4.81M sort/seconds
+
+	[+] bogosort on 14 items
+	[+] items: 508, 1, 422, 159, 411, 33, 457, 437, 418, 377, 351, 122, 389, 319
+	[+] sorting...
+	[+] items: 1, 33, 122, 122, 159, 377, 377, 389, 411, 422, 437, 437, 457, 508
+	[+] sort count: 18245551922
+	[+] sort time : 3798.31 seconds
+	[+] sort speed: 4.80M sort/seconds
+
 
 # runtime (15 items)
 
 there is one chance in 1,307,674,368,000 to sort the array on each sort
 
-	[waiting new test with corrected algo]
+	[+] bogosort on 15 items
+	[+] items: 299, 159, 201, 206, 223, 27, 390, 176, 463, 490, 423, 306, 57, 68, 24
+	[+] sorting...
+	[+] items: 24, 24, 57, 57, 159, 176, 201, 206, 223, 390, 390, 423, 463, 490, 490
+	[+] sort count: 24687722532
+	[+] sort time : 5422.66 seconds
+	[+] sort speed: 4.55M sort/seconds
+	
+	[+] bogosort on 15 items
+	[+] items: 442, 59, 436, 200, 29, 268, 390, 15, 370, 377, 320, 468, 456, 120, 70
+	[+] sorting...
+	[+] items: 15, 29, 59, 200, 268, 320, 370, 370, 390, 390, 436, 456, 468, 468, 468
+	[+] sort count: 37323500892
+	[+] sort time : 8556.80 seconds
+	[+] sort speed: 4.36M sort/seconds
+
+
 
 # runtime (16 items)
 
-there is one chance in 20,922,789,888,000 to sort the array on each sort, will i am lucky ?
+there is one chance in 20,922,789,888,000 to sort the array on each sort, will i get lucky ?
 	
 	[waiting new test with corrected algo]
