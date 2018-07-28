@@ -1,8 +1,10 @@
 # bogosort
 
-a simple implementation of bogosort in C
+A simple implementation of bogosort in C
 
-# runtime (small list)
+More information: https://en.wikipedia.org/wiki/Bogosort
+
+# Runtime (small list)
 
 Intel(R) Core(TM) i5-4210U CPU @ 2.4GHz
 
@@ -43,9 +45,9 @@ Intel(R) Core(TM) i5-4210U CPU @ 2.4GHz
 	[+] sort count: 28106593
 	[+] sort time: 4.69 seconds, 5997203 sort/seconds
 
-# runtime (12 items)
+# Runtime (12 items)
 
-there is one chance in 479,001,600 to sort the array on each sort
+There is one chance in 479,001,600 to sort the array on each sort
 
 	[+] bogosort on 12 items
 	[+] items: 253, 18, 211, 300, 448, 11, 395, 308, 293, 355, 488, 421
@@ -68,9 +70,9 @@ there is one chance in 479,001,600 to sort the array on each sort
 	[+] sort count: 684290083
 	[+] sort time: 124.30 seconds, 5505118 sort/seconds
 
-# runtime (13 items)
+# Runtime (13 items)
 
-there is one chance in 6,227,020,800 to sort the array on each sort
+There is one chance in 6,227,020,800 to sort the array on each sort
 
 	[+] bogosort on 13 items
 	[+] items: 260, 451, 348, 431, 479, 87, 383, 369, 88, 195, 199, 83, 240
@@ -96,9 +98,9 @@ there is one chance in 6,227,020,800 to sort the array on each sort
 	[+] sort time : 174.76 seconds
 	[+] sort speed: 4.99M sort/seconds
 
-# runtime (14 items)
+# Runtime (14 items)
 
-there is one chance in 87,178,291,200 to sort the array on each sort
+There is one chance in 87,178,291,200 to sort the array on each sort
 	
 	[+] bogosort on 14 items
 	[+] items: 321, 506, 328, 229, 159, 185, 101, 373, 422, 57, 450, 56, 264, 395
@@ -117,9 +119,9 @@ there is one chance in 87,178,291,200 to sort the array on each sort
 	[+] sort speed: 4.80M sort/seconds
 
 
-# runtime (15 items)
+# Runtime (15 items)
 
-there is one chance in 1,307,674,368,000 to sort the array on each sort
+There is one chance in 1,307,674,368,000 to sort the array on each sort
 
 	[+] bogosort on 15 items
 	[+] items: 299, 159, 201, 206, 223, 27, 390, 176, 463, 490, 423, 306, 57, 68, 24
@@ -139,8 +141,8 @@ there is one chance in 1,307,674,368,000 to sort the array on each sort
 
 
 
-# runtime (16 items)
+# Runtime (16 items)
 
-there is one chance in 20,922,789,888,000 to sort the array on each sort, will i get lucky ?
+There is one chance in 20,922,789,888,000 to sort the array on each sort, will I get lucky ?
 	
 	[waiting new test with corrected algo]
