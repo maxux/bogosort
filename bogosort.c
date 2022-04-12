@@ -5,6 +5,7 @@
 #include <errno.h>
 #include <sys/time.h>
 #include <locale.h>
+#include <stdint.h>
 
 //
 // die with error
@@ -17,8 +18,38 @@ void diep(char *str) {
 //
 // return a random integer within a range
 //
+// fast pcg32 from wikipedia example
+//
+static uint64_t state = 0x4d595df4d0f33173u;
+static uint64_t const multiplier = 6364136223846793005u;
+static uint64_t const increment  = 1442695040888963407u;
+
+static uint32_t rotr32(uint32_t x, unsigned r) {
+    return x >> r | x << (-r & 31);
+}
+
+uint32_t pcg32() {
+    uint64_t x = state;
+    unsigned count = (unsigned)(x >> 59);
+
+    state = x * multiplier + increment;
+    x ^= x >> 18;
+    return rotr32((uint32_t)(x >> 27), count);
+}
+
+void pcg32_init(uint64_t seed) {
+    state = seed + increment;
+    pcg32();
+}
+
 int rnd(int low, int high) {
-    return rand() % (high - low + 1) + low;
+    // return rand() % (high - low + 1) + low;
+    return pcg32() % (high - low + 1) + low;
+}
+
+void init(uint64_t seed) {
+    // srand(seed);
+    pcg32_init(seed);
 }
 
 //
@@ -102,7 +133,7 @@ int main(int argc, char *argv[]) {
         possibilities *= i;
     }
 
-    printf("[+] bogosort on %d items (possibilities: %lu)\n", length, possibilities);
+    printf("[+] bogosort on %d items (possibilities: %'lu)\n", length, possibilities);
 
     //
     // allocating buffers
@@ -119,7 +150,7 @@ int main(int argc, char *argv[]) {
     //
     // generating items
     //
-    srand(time(NULL));
+    init(time(NULL));
 
     randomize(items, length);
     memcpy(result, items, sizeof(int) * length);
