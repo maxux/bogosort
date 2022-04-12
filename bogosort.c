@@ -4,6 +4,7 @@
 #include <string.h>
 #include <errno.h>
 #include <sys/time.h>
+#include <locale.h>
 
 //
 // die with error
@@ -90,11 +91,18 @@ int main(int argc, char *argv[]) {
     long long iterations = 0;
     struct timeval begin, end, diff;
     float elapsed = 0;
+    uint64_t possibilities = 1;
+
+    setlocale(LC_NUMERIC, "");
 
     if(argc > 1)
         length = atoi(argv[1]);
 
-    printf("[+] bogosort on %d items\n", length);
+    for(int i = 2; i <= length; i++) {
+        possibilities *= i;
+    }
+
+    printf("[+] bogosort on %d items (possibilities: %lu)\n", length, possibilities);
 
     //
     // allocating buffers
@@ -138,7 +146,7 @@ int main(int argc, char *argv[]) {
     timersub(&end, &begin, &diff);
     elapsed = (float) diff.tv_sec + (((float) diff.tv_usec) / 1000000);
 
-    printf("[+] sort count: %lld\n", iterations);
+    printf("[+] sort count: %'lld\n", iterations);
     printf("[+] sort time : %02.2f seconds (%.2f minutes)\n", elapsed, elapsed / 60);
     printf("[+] sort speed: %.2fM sort/seconds\n", (iterations / elapsed) / 1000000);
 
