@@ -7,36 +7,6 @@ More information: https://en.wikipedia.org/wiki/Bogosort
 # Runtime (small list)
 
 Intel(R) Core(TM) i5-4210U CPU @ 2.4GHz
-
-	[+] bogosort on 2 items
-	[+] items: 337, 405
-	[+] sorting...
-	[+] items: 337, 405
-	[+] sort count: 0
-	[+] sort time: 0.00 seconds, -nan sort/seconds
-
-	[...]
-	
-	[+] bogosort on 8 items
-	[+] items: 154, 292, 240, 394, 500, 136, 312, 457
-	[+] sorting...
-	[+] items: 136, 154, 240, 292, 312, 394, 457, 500
-	[+] sort count: 32915
-	[+] sort time: 0.01 seconds, 4328074 sort/seconds
-	
-	[+] bogosort on 9 items
-	[+] items: 154, 292, 240, 394, 500, 136, 312, 457, 254
-	[+] sorting...
-	[+] items: 136, 154, 240, 254, 292, 312, 394, 457, 500
-	[+] sort count: 198246
-	[+] sort time: 0.03 seconds, 6491143 sort/seconds
-	
-	[+] bogosort on 10 items
-	[+] items: 154, 292, 240, 394, 500, 136, 312, 457, 254, 198
-	[+] sorting...
-	[+] items: 136, 154, 198, 240, 254, 292, 312, 394, 457, 500
-	[+] sort count: 2923458
-	[+] sort time: 0.45 seconds, 6461894 sort/seconds
 	
 	[+] bogosort on 11 items
 	[+] items: 154, 292, 240, 394, 500, 136, 312, 457, 254, 198, 390
@@ -143,6 +113,18 @@ There is one chance in 1,307,674,368,000 to sort the array on each sort
 
 # Runtime (16 items)
 
-There is one chance in 20,922,789,888,000 to sort the array on each sort, will I get lucky ?
+there is one chance in 20,922,789,888,000 to sort the array on each sort
 	
 	[waiting new test with corrected algo]
+	
+	[+] bogosort on 16 items
+	[+] items: 314, 429, 431, 177, 167, 184, 91, 185, 271, 294, 440, 238, 454, 467, 29, 258
+	[+] sorting...
+	[+] items: 29, 91, 167, 177, 184, 238, 258, 271, 271, 294, 294, 429, 431, 454, 467, 467
+	[+] sort count: 160015104134
+	[+] sort time : 38657.09 seconds
+	[+] sort speed: 4.14M sort/seconds
+
+# runtime (17 items)
+
+there is one chance in 355,687,428,096,000 to sort the array on each sort, will i get lucky ?
